@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Triangle</title>
+    <style>
+        body {
+            background-color: #FED517;
+            color: black;
+        }
+        
+        .container {
+            margin: auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: auto;
+        }
+        
+        #Goback {
+            justify-content: center;
+            margin-left: 48%;
+            margin-top: 3rem;
+            border: 1px solid black;
+            border-radius: 8px;
+            height: 2rem;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .small {
+            font-weight: bold;
+            font-size: large;
+            margin-left: 35%;
+        }
+        
+        button {
+            margin-top: 2rem;
+            font-weight: bold;
+            height: 5vh;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            margin-left: 35%;
+        }
+        
+        .Firstsection {
+            margin-left: 35%;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        .Secondsection {
+            font-size: large;
+            font-weight: bold;
+            margin-left: 35%;
+        }
+        
+        .Thirdsection {
+            margin-left: 35%;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container" style="margin: auto; justify-content: center; align-items: center;">
+        <div class="containertwo">
+            <button id="Goback"> 
+                <a href="/index.html"  style="text-decoration:none;">Goback</a>
+            </button>
+            <h1>To Calculate Area Of A Triangle</h1>
+            </br>
+            </br>
+            <small class="small" style="text-align: center;">Select the option below as per the data you have for a triangle  </small>
+            </br>
+            <button type="radio" class="optionOneOne"> If You Have Base And Height Length</button>
+            </br>
+            <button type="radio" class="optionOneTwo">If You Have Length Of 3 sides </button>
+            </br>
+            <button type="radio" class="optionOneThree">If You Have Length of 2Sides And Included Angle</button>
+            </br>
+        </div>
+
+    </div>
+
+    <div class="Firstsection" style="display:none ;" style="margin: auto; justify-content: center; align-items: center;">
+        <div class="sectionOne">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.eNgZEcrQ2SZji1gBaDkKzAHaEj&pid=Api&P=0&w=241&h=148" alt="" style="width:20%;margin-left: 40%;">
+            </br>
+            </br>
+            <label for="base">Base=
+                <input id="base" type="number" min="1" class="baseInputOne"></input>
+            </label>
+
+            <label for="height">Height=
+                <input id="height" type="number" min="1" class="heightInputOne"></input>
+            </label>
+            </br>
+            </br>
+            <button class="calculateOne" style="margin:auto;">Calculate</button>
+            </br>
+
+            <label for="output">Output Will Be Shown Here
+            </br>
+        </br>
+               <div  id="output"   class="outputOne" style="width:25%; height:5vh; border:2px solid black; background-color: #FFDB35;">Area =1/2*Base*Height</div>
+           </label>
+        </div>
+    </div>
+    <div class="Secondsection" style="display:none ;" style="margin: auto; justify-content: center; align-items: center;">
+        <div class="sectionTwo">
+            <img src="https://vt-s3-files.s3.amazonaws.com/uploads/problem_question_image/image/688/TRIANGLE.jpg" alt="" style="width: 20%; margin-left: 40%;">
+            </br>
+            </br>
+            <label for="firstside"> a=
+                <input id="firstside"  type="number" min="1" class=" firstsideInput2"></label>
+            </label>
+
+            <label for="secondside"> b=
+                <input id="secondside"  type="number" min="1" class=" secondsideInput2"></label>
+            </label>
+
+            <label for="thirdside"> c=
+                <input id="thirdside"  type="number" min="1" class=" thirdsideInput2"></label>
+            </label>
+            </br>
+            </br>
+            <button class="calculateTwo" style="margin:auto;">Calculate</button>
+            </br>
+
+            <label for="output2">Output Will Be Shown Here
+            </br>
+        </br>
+                <div id="ouput2" class="outputTwo"  style="width:25%; height:5vh; border:2px solid black; background-color: #FFDB35;">A=sqrt(s*(s-a)*(s-b)*(s-c))"></div>
+            </label>
+        </div>
+    </div>
+    <div class="Thirdsection" style="display:none;" style="margin: auto; justify-content: center; align-items: center;">
+        <div class="sectionThree">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.iCkzo-T8cs8fbbYBtp9nzgHaEh&pid=Api&P=0&w=273&h=167" alt="" style="width:20%; margin-left: 40%;">
+            </br>
+            </br>
+            <label for="sideOne">a=
+                <input id="sideOne" type="number" class="firstInput3"></input>
+
+              </label>
+
+            <label for="sideTwo">c=
+                <input id="sideTwo" type="number" class="secondInput3"></input>
+
+              </label>
+
+            <label for="angle"> Angle=
+                <input id="angle" type="number" class="thirdInput3"></input>
+
+            </label>
+            </br>
+            </br>
+            <button class="calculateThree" style="margin:auto;">Calculate</button>
+            </br>
+            <label for="output3">Output Will Be Shown Here
+            </br>
+        </br>
+            <div id="output3" class="outputThree"  style="width:25%; height:5vh; border:2px solid black; background-color: #FFDB35;">1/2*b*c*sin(Angle)</div>
+              </label>
+        </div>
+    </div>
+    <script src="/source/area.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnglesOfTriangles</title>
+    <style>
+        body {
+            background-color: #438BD3;
+        }
+        
+        #Goback {
+            font-size: large;
+            font-weight: bold;
+            border-radius: 12px;
+            color: black;
+            background-color: #BAB8BB;
+        }
+        
+        .containerone {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10%;
+        }
+        
+        h2 {
+            padding-top: 2rem;
+        }
+        
+        input {
+            width: 5%;
+            height: 5vh;
+            border-radius: 12px;
+            background-color: #00235D;
+            color: white;
+        }
+        
+        .submit {
+            background-color: #BAB8BB;
+            font-size: large;
+            font-weight: bold;
+            color: black;
+            margin-top: 2rem;
+        }
+        
+        div .output {
+            width: 20%;
+            height: 8vh;
+            border: 2px solid black;
+            margin: auto;
+            margin-top: 2rem;
+            background-color: #014EB8;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerone">
+        <div class="sectionOne">
+            <button id="Goback"> 
+              <a href="/index.html"  style="text-decoration:none;">Goback</a>
+           </button>
+            <h2>Enter the angles in the input field and we will tell you if these angles make a TRIANGLE or not. </h2>
+            <input class="inputone" type="number" min="1" max="180"></input>
+            <input class="inputTwo" type="number" min="1" max="180"></input>
+            <input class="inputThree" type="number" min="1" max="180"></input>
+            </br>
+            <button class="submit">Submit</button>
+            </br>
+            <div class="output">Output will Be Shown Here</div>
+            </br>
+        </div>
+    </div>
+    <script src="/source/angles.js"></script>
+</body>
+
+</html>

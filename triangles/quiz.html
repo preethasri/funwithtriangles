@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            background-color: #D6FE5E;
+        }
+        
+        .question {
+            background-color: #E7E7E7;
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        button {
+            margin-left: 40%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            width: 10%;
+            height: 5vh;
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        h1 {
+            margin-left: 35%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="display:grid; place-items:center;">
+        <div class="triangleSection">
+            <button class="Goback" style="text-decoration: none;">
+              <a href="/index.html">Go Back</a>
+            </button>
+
+            <h1>Triangle Quiz</h1>
+
+            <div class="question">
+                <p> 1.Two congruent triangles are actually similar triangles with the ratio of corresponding sides as.?</p>
+                <form class="quizform">
+                    <label for="ques1_opt1">
+                    <input required type="radio" id="ques1_opt1" value="answer-1" name="question_1">1:2</input>
+                </label>
+                    <label for="ques1_opt2">
+                    <input required type="radio" id="ques1_opt2" value="answer-2" name="question_1">1:1</input>
+                </label>
+                    <label for="ques1_opt3">
+                    <input required type="radio" id="ques1_opt3" value="answer-3" name="question_1">1:3</input>
+                </label>
+                    <label for="ques1_opt4">
+                    <input required type="radio" id="ques1_opt4" value="answer-4" name="question_1">2:1</input>
+                </label>
+            </div>
+            <div class="question">
+                <p>2.In triangle DEF,GH is a line parallel to EF cutting DE in G and and DF in H. If DE = 16.5, DH = 5, HF = 6 then GE = ?</p>
+                <label for="ques2_opt1">
+                    <input required type="radio" id="ques2_opt1" value="answer-1" name="question_2">9</input>
+                </label>
+                <label for="ques2_opt2">
+                    <input required type="radio" id="ques2_opt2" value="answer-2" name="question_2">10</input>
+                </label>
+                <label for="ques2_opt3">
+                    <input required type="radio" id="ques2_opt3" value="answer-3" name="question_2">7.5</input>
+                </label>
+                <label for="ques2_opt4">
+                    <input required type="radio" id="ques2_opt4" value="answer-4" name="question_2">8</input>
+                </label>
+            </div>
+            <div class="question">
+                <p>3.Triangle ABC is similar to triangle DEF and their areas are 64 cm2 and 121 cm2 respectively. If EF = 15.4 cm, then BC = ??</p>
+                <label for="ques3_opt1">
+                    <input required type="radio" id="ques3_opt1" value="answer-1" name="question_3">11.2cm</input>
+                </label>
+                <label for="ques3_opt2">
+                    <input required type="radio" id="ques3_opt2" value="answer-2" name="question_3">8cm</input>
+                </label>
+                <label for="ques3_opt3">
+                    <input required type="radio" id="ques3_opt3" value="answer-3" name="question_3">11cm</input>
+                </label>
+                <label for="ques3_opt4">
+                    <input required type="radio" id="ques3_opt4" value="answer-4" name="question_3">13cm</input>
+                </label>
+            </div>
+            <div class="question">
+                <p>4.Two equilateral triangles are congruent when:</p>
+                <label for="ques4_opt1">
+                    <input required type="radio" id="ques4_opt1" value="answer-1"  name="question_4">Their Areas Are Propotional</input>
+                </label>
+                <label for="ques4_opt2">
+                    <input required  type="radio" id="ques4_opt2" value="answer-2" name="question_4">Their sides are equal</input>
+
+                </label>
+                <label for="ques4_opt3">
+                    <input required type="radio" id="ques4_opt3" value="answer-3" name="question_4">Their sides are proportional</input>
+                </label>
+                <label for="ques4_opt4">
+                    <input required type="radio" id="ques4_opt4" value="answer-4" name="question_4">Their angles are equal</input>
+                </label>
+
+            </div>
+            <div class="question">
+                <p>5.In △ABC, if ∠B = 30° and ∠C = 70°, then which of the following is the longest side?</p>
+                <label for="ques5_opt1">
+                    <input required type="radio" id="ques5_opt1" value="answer-1" name="question_5">AC</input>
+                </label>
+                <label for="ques5_opt2">
+                    <input required type="radio" id="ques5_opt2" value="answer-2" name="question_5">BC</input>
+                </label>
+                <label for="ques5_opt3">
+                    <input required type="radio" id="ques5_opt3" value="answer-3" name="question_5">AB</input>
+                </label>
+                <label for="ques5_opt4">
+                    <input required type="radio" id="ques5_opt4" value="answer-4" name="question_5">AC or BC</input>
+                </label>
+            </div>
+            <div class="question">
+                <p>6.If ABC is an equilateral triangle, then each angle equals to:</p>
+                <label for="ques6_opt1">
+                    <input required type="radio" id="ques6_opt1" value="answer-1" name="question_6">90degree</input>
+                </label>
+                <label for="ques6_opt2">
+                    <input required type="radio" id="ques6_opt2" value="answer-2"  name="question_6">180degree</input>
+                </label>
+                <label for="ques6_opt3">
+                    <input required type="radio" id="ques6_opt3" value="answer-3"  name="question_6">120degree</input>
+                </label>
+                <label for="ques6_opt4">
+                    <input required type="radio" id="ques6_opt4" value="answer-4"  name="question_6">60degree</input>
+                </label>
+
+            </div>
+            <div class="question">
+                <p>7. A triangle in which two sides are equal is called:</p>
+                <label for="ques7_opt1">
+                    <input required type="radio" id="ques7_opt1" value="answer-1"  name="question_7">Scalene triangle</input>
+                </label>
+                <label for="ques7_opt2">
+                    <input required type="radio" id="ques7_opt2" value="answer-2"  name="question_7">Equilateral triangle</input>
+                </label>
+                <label for="ques7_opt3">
+                    <input required type="radio" id="ques7_opt3" value="answer-3"  name="question_7">Isosceles triangle</input>
+                </label>
+                <label for="ques7_opt4">
+                    <input required type="radio" id="ques7_opt4" value="answer-4"  name="question_7">None Of The Above</input>
+                </label>
+
+            </div>
+            <div class="question">
+                <p>8.All the medians of a triangle are equal in case of a:</p>
+                <label for="ques8_opt1">
+                    <input required type="radio" id="ques8_opt1" value="answer-1"  name="question_8">Scalene triangle</input>
+                </label>
+                <label for="ques8_opt2">
+                    <input required type="radio" id="ques8_opt2" value="answer-2"  name="question_8">Right angled triangle</input>
+                </label>
+                <label for="ques8_opt3">
+                    <input required type="radio" id="ques8_opt3" value="answer-3"  name="question_8">Equilateral triangle</input>
+                </label>
+                <label for="ques8_opt4">
+                    <input required type="radio" id="ques8_opt4" value="answer-4"  name="question_8">Isosceles triangle</input>
+                </label>
+
+
+
+            </div>
+            <div class="question">
+                <p>9.In a right triangle, the longest side is:</p>
+                <label for="ques9_opt1">
+                    <input required type="radio" id="ques9_opt1" value="answer-1"  name="question_9">Base</input>
+                </label>
+                <label for="ques9_opt2">
+                    <input required type="radio" id="ques9_opt2" value="answer-2" name="question_9" >Hypotenuse</input>
+                </label>
+                <label for="ques9_opt3">
+                    <input required type="radio" id="ques9_opt3" value="answer-3"  name="question_9">Perpendicular</input>
+                </label>
+                <label for="ques9_opt4">
+                    <input required type="radio" id="ques9_opt4" value="answer-4"  name="question_9">None Of The Above</input>
+                </label>
+            </div>
+            <div class="question">
+                <p>10.Two sides of a triangle are of lengths 5 cm and 1.5 cm. The length of the third side of the triangle cannot be</p>
+                <label for="ques10_opt1">
+                    <input required type="radio" id="ques10_opt1" value="answer-1"  name="question_10">3.6cm</input>
+                </label>
+                <label for="ques10_opt2">
+                    <input required type="radio" id="ques10_opt2" value="answer-2"  name="question_10">4.1cm</input>
+                </label>
+                <label for="ques10_opt3">
+                    <input required type="radio" id="ques10_opt3" value="answer-3" name="question_10">3.8cm</input>
+                </label>
+                <label for="ques10_opt4">
+                    <input required type="radio" id="ques10_opt4" value="answer-4" name="question_10">3.4cm</input>
+                </label>
+            </div>
+
+
+            <button class="submit">Submit</button>
+            </form>
+            </br>
+            <label for="output" style="font-size: large; font-weight: bold; margin-left: 35%; ">output is shown here
+            <div id="output" class="outputDiv"  style="width:30%; height:5vh; border:2px solid black ; margin-left: 35%; ">score:For each correct answer you will get 1 point</div>
+           </label>
+
+        </div>
+    </div>
+    <script src="/source/quizz.js"></script>
+
+</body>
+
+</html>

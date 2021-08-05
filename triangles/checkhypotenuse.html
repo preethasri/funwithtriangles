@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Hypotenuse</title>
+    <style>
+        body {
+            background-color: #9B7ED8;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        button {
+            justify-content: center;
+            margin-top: 2rem;
+            border: 1px solid black;
+            height: 2rem;
+            width: 7%;
+            color: black;
+            font-weight: bold;
+            border-radius: 12px;
+        }
+        
+        h2 {
+            margin-top: 2rem;
+        }
+        
+        .inputs {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="margin: auto; justify-content: center; align-items: center;">
+        <button class="GOback" style="text-decoration: none;">
+        
+              <a href="/index.html">Go Back</a>
+       </button>
+        </br>
+        <h2>Enter The Length Of Sides Of Right Angle Triangle </h2>
+        </br>
+        <img src="https://3.bp.blogspot.com/-R16HFj-EJ8E/VCjgNpytgHI/AAAAAAAAACE/eNdxhuJH3vM/s1600/right%2Bscalene.gif" alt="" style="width:15%;  margin-top: 2rem;">
+        </br>
+        <div class="inputs">
+            <label for="sideone">a=
+                     <input id ="sideone"class="Firstside" type="number"  style="border-radius: 12px; width:25%; height:3rem;"></input>
+        </label>
+            <label for="sideTwo">b=
+              <input id ="sideTwo"class="Secondside" type="number" style="border-radius: 12px; width:25%; height:3rem;"></input>
+        </label>
+            </br>
+            </br>
+        </div>
+        <button class="submit">Submit</button>
+        </br>
+        </br>
+        <label for="output">Hypotenuse Will Be Calculated Here:
+        </br> 
+    </br>
+              <div id ="output" class="outputDiv" type="number" style="width:250px; height:5vh; border: 2px solid black; text-align: center;"> c = sqrt(a² + b²).
+            </div>
+
+        </label>
+
+    </div>
+    <script src="/source/hypotenuse.js"></script>
+</body>
+
+</html>
