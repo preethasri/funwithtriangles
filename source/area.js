@@ -119,11 +119,15 @@ function areaTwo(sideone, sidetwo, sidethree) {
 
     var s = parseInt(sideone + sidetwo + sidethree) / 2;
 
-    let resultTwo = Math.sqrt(s * (s - sideone) * (s - sidetwo) * (s - sidethree));
+    if (s < sideone || s < sidetwo || s < sidethree) {
+        outputTwo.innerHTML = "Enter Valid Side Length Such That Each side Length"
+    } else {
+
+        let resultTwo = Math.sqrt(s * (s - sideone) * (s - sidetwo) * (s - sidethree));
 
 
-    outputTwo.innerHTML = `area=${resultTwo.toFixed(2)}`
-
+        outputTwo.innerHTML = `area=${resultTwo.toFixed(2)}`
+    }
 }
 
 //**section3*/
@@ -131,7 +135,7 @@ function areaTwo(sideone, sidetwo, sidethree) {
 calculateThree.addEventListener('click', () => {
     var sideoneInput3 = parseInt(firstinput3.value);
     var sidetwoInput3 = parseInt(secondinput3.value);
-    var oneAngle = parseInt(thirdinput3.value);
+    var oneAngle = thirdinput3.value;
 
 
     if (firstinput3.value == "" || secondinput3.value == 0 || thirdinput3.value == "") {
@@ -151,10 +155,10 @@ calculateThree.addEventListener('click', () => {
 })
 
 function areathree(inputone, inputtwo, inputthree) {
-    let A = Math.sin(inputthree);
+    let angleside = Math.sin(inputthree);
 
-    let resultthree = (1 / 2 * inputone * inputtwo * A)
+    let resultthree = (1 / 2 * inputone * inputtwo * angleside)
 
-    outputThree.innerHTML = `Area=${resultthree.toFixed(2)}`
+    outputThree.innerHTML = `Area = ${resultthree.toFixed(2)}`
 
 }
