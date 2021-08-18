@@ -26,6 +26,6 @@ submit.addEventListener('click', () => {
 })
 
 function area(firstInput, secondInput) {
-    let result = Math.sqrt(firstInput * firstInput - secondInput * secondInput)
+    let result = Math.sqrt((firstInput * firstInput) + (secondInput * secondInput))
     output.innerHTML = `c= ${result.toFixed(2)}`
 }

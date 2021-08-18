@@ -27,7 +27,9 @@ quizQuestions.addEventListener('submit', (e) => {
             container[i].style.backgroundColor = "red";
         }
         i++;
+
     })
     output.innerHTML = `your score is ${score}`
+    submitBtn.style.display = "none";
 
 })

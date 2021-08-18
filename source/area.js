@@ -94,7 +94,7 @@ calculateTwo.addEventListener('click', () => {
     var thirdside = parseInt(thirdsideinput2.value);
 
 
-    if (firstsideinput2.value == "" || secondsideinput2.value == 0 || thirdsideinput2.value == "") {
+    if (firstsideinput2.value == "" || secondsideinput2.value == "" || thirdsideinput2.value == "") {
         outputTwo.innerHTML = "please enter a valid input ";
         return;
     } else if (firstsideinput2.value == 0 || secondsideinput2.value == 0 || thirdsideinput2.value == 0) {
@@ -106,7 +106,10 @@ calculateTwo.addEventListener('click', () => {
         return;
     } else {
         areaTwo(firstside, secondside, thirdside)
+        return
     }
+
+
 
 
 
